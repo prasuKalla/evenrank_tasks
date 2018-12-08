@@ -25,3 +25,17 @@ function leftClick() {
 }
 
 
+ setInterval("change()", 60000);
+     var x=0;
+
+     function change()
+     {
+                document.getElementById("pic").src=pics[curImg];
+                curImg++;
+                if (pics.length == curImg) 
+                {
+                    curImg= 0;
+                    
+                }
+
+     }
