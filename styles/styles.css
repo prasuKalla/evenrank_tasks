@@ -1,0 +1,13 @@
+.hide{
+        display: none;
+     }
+
+.nav-link{
+	color: yellow;
+}
+
+#task_1{
+  position: fixed; 
+  top: 30%;
+  left: 25%;
+}
