@@ -11,3 +11,31 @@
   top: 30%;
   left: 25%;
 }
+
+#task_2{
+  position: fixed; 
+  top: 30%;
+  left: 10%;
+}
+
+ .gridTwo{
+    display: grid;
+    grid-template-columns: 200px 200px 200px;
+    grid-template-rows: 50px 50px 50px;
+    grid-gap: 1px;
+    border: 2px solid #000000;
+}
+
+#changeBtn{
+  position: fixed; 
+  top: 85%;
+  left: 45%;
+}
+
+.grid{
+  display:none;
+}
+
+#grid0{
+  display: block;
+}

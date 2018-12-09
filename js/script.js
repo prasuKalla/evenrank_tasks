@@ -1,3 +1,6 @@
+
+//Task 1
+
 var pics = [
   "./img/p1.jpg",
   "./img/p2.jpg",
@@ -25,11 +28,10 @@ function leftClick() {
 }
 
 
- setInterval("change()", 60000);
-     var x=0;
+ setInterval("changeImg()", 60000);
+     var curImg=0;
 
-     function change()
-     {
+     function changeImg() {
                 document.getElementById("pic").src=pics[curImg];
                 curImg++;
                 if (pics.length == curImg) 
@@ -37,5 +39,33 @@ function leftClick() {
                     curImg= 0;
                     
                 }
+           }
 
-     }
+
+//Task 2
+
+   var curGrid=0;
+      
+      $(function () {
+            $('#changeBtn').click(function () {
+               $('.grid').css('display', 'none');
+               curGrid = (curGrid + 1) % 6;
+               $('.grid#grid'+curGrid).css('display', 'block');
+               
+        });
+    });
+
+
+      setInterval("changeGrid()", 60000);
+       var curGrid=0;
+
+           function changeGrid() {                
+                  curGrid++;
+
+                  if (curGrid == 6) {
+                     curGrid= 0;                      
+                  }
+
+                  $('.grid').css('display', 'none');
+                  $('.grid#grid'+curGrid).css('display', 'block');
+             }
