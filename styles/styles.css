@@ -18,7 +18,7 @@
   left: 10%;
 }
 
- .gridTwo{
+.gridTwo{
     display: grid;
     grid-template-columns: 200px 200px 200px;
     grid-template-rows: 50px 50px 50px;
@@ -38,4 +38,48 @@
 
 #grid0{
   display: block;
+}
+
+
+#inputBox{
+  float: center;
+  vertical-align: middle;
+  position: absolute;
+  top: 15%;
+  left: 40%; 
+}
+
+#searchBtn{
+  float: center;
+  vertical-align: middle;
+  top: 15%;;
+  left: 40%;
+}
+
+#displayBox{
+  float: center;
+  top: 25%;
+  left: 40%;
+  display: grid;
+  grid-template-columns: 100%;
+  border-style: solid;
+  border-color: #000000;
+}
+
+
+
+body{
+   overflow-y:scroll; 
+    position:relative;
+}
+
+#paginate{
+
+  top: 15%;
+  left: 40%;
+}
+
+
+html {
+  box-sizing: border-box;
 }

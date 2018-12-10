@@ -5,6 +5,7 @@
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+      
 	   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.bundle.min.js"></script>
@@ -14,11 +15,13 @@
    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
-
-	<script type="text/javascript" src="./js/script2.js"></script>
+	<script type="text/javascript" src="./js/script3.js"></script>
 	<link rel="stylesheet" type="text/css" href="./styles/styles.css">
 </head>
+
+
 <body>
 
 
@@ -41,10 +44,10 @@
         <a class="nav-link" href="./index.html" id="show1">&nbsp Task 1 &nbsp</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#" id="show2">&nbsp Task 2 &nbsp</a>
+        <a class="nav-link" href="./index2.html" id="show2">&nbsp Task 2 &nbsp</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="./index3.html" id="show3">&nbsp Task 3 &nbsp&nbsp</a>
+        <a class="nav-link" href="#" id="show3">&nbsp Task 3 &nbsp&nbsp</a>
       </li>
 
 
@@ -58,39 +61,49 @@
 
 	<br>
 
-  <div class="container" id="task_2">
-    <div class="row justify-content-center">
-      <div class="gridTwo col-md-4 col-sm-6">
-        <a href="#" class="grid"  id="grid0"><img src="./img/p1.jpg"></a>
+  <div class="container" id="task_3">
+
+
+     <div class="row">   
+       <div class="col-md-3">
+         <input type="text" placeholder="Enter Country" name="enter_country" value="" id="inputBox">
+       </div> 
+       <div class="col-md-3"> 
+         <button type="button" class="btn btn-success" id="searchBtn" onClick="showInput();">Click to Search</button>
        </div>
 
-       <div class="gridTwo col-md-4 col-sm-6">
-        <a href="#" class="grid" id="grid1"><img src="./img/p1.jpg"></a>
+       <div class="col-md-3"> 
+         <button type="button" class="btn btn-primary" id="retry" onClick="window.location.reload(true);">Delete results</button>
        </div>
 
-       <div class="gridTwo col-md-4 col-sm-6" >
-        <a href="#" class="grid" id="grid2"><img src="./img/p1.jpg"></a>
-       </div>
-   </div>
+      </div> 
+      <br>
 
-   <div class="row justify-content-center">
-      <div class="gridTwo col-md-4 col-sm-6">
-        <a href="#" class="grid" id="grid3"><img src="./img/p1.jpg"></a>
+      
+
+       <div class="container"  id="displayBox">
+          <div class="row">
+            <div class="col-md-2">                            
+              </div>
+              <div class="col-md-2">                            
+              </div>
+            <!-- for name  -->
+             <div class="col-md-2">             
+                Results:
+              </div>
+            <!-- for flag -->
+              <div class="col-md-2">
+                
+              </div>        
+           </div>
+           <br>
+             <!--results appended here  -->
        </div>
 
-       <div class="gridTwo col-md-4 col-sm-6">
-        <a href="#" class="grid"  id="grid4"><img src="./img/p1.jpg"></a>
-       </div>
-
-       <div class="gridTwo col-md-4 col-sm-6">
-        <a href="#" class="grid" id="grid5"><img src="./img/p1.jpg"></a>
-       </div>
-   </div>
-   <br>
-   <div class="container">
-     <button type="button" class="btn btn-success" id="changeBtn">Change Grid</button>
-   </div>
+      
   </div>
+
+
   
 </body>
 </html>
