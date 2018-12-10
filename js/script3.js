@@ -17,13 +17,11 @@ $(document).ready(function(){
          return;
 
         var Url= searchUrl+searchCountry;
-
-        //alert(Url);
+       
                
           $.get(Url, function(data){
              
-             // var obj=JSON.stringify(data);
-                
+                        
                 for(var i=0;i<data.length;i++){
 
                      var item=data[i];
@@ -55,14 +53,7 @@ $(document).ready(function(){
 
 
 
-                          // document.getElementById("displayBox").innerHTML= "<div class="row">\
-                         //          <div class="col-md-2"></div>\
-                         //          <div class="col-md-2"></div>\                              
-                         //          <div class="col-md-2">"+res_name+"</div>\                             
-                         //          <div class="col-md-2">\
-                         //           <img src="+res_flag+">\
-                         //          </div>\     
-                         //        </div><br>" 
+                         
 
 
 
